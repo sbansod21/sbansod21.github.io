@@ -1,33 +1,70 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-134253117-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag('js', new Date())
-
-      gtag('config', 'UA-134253117-1')
-    </script>
-
-    <meta
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-      name="viewport"
+    <!-- import statements -->
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya Sans SC"
+      rel="stylesheet"
     />
-    <meta
-      name="description"
-      content="I am Sush Bansod, an aspiring Software Engineer."
+    <link
+      href="https://fonts.googleapis.com/css?family=Julius Sans One"
+      rel="stylesheet"
     />
-    <title>
-      Sushruti Bansod | Computer Science & ASL Student @ University of
-      Pittsburgh
-    </title>
+
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+			<script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+
+    <!-- END OF IMPORTS -->
+    <title>Sush Bansod</title>
   </head>
+  <body>
+    <div id="header">
+      <h1 data-aos="zoom-in-up">Sushruti Bansod</h1>
+      <nav>
+        <ul data-aos="zoom-in-up">
+          <li class="link_underline">
+            <a href="#about">
+              | About Me |
+            </a>
+          </li>
+          <li class="link_underline" id="projects"><a>| Projects |</a></li>
+          <li class="link_underline" id="resume"><a>| Resume |</a></li>
+          <li class="link_underline" id="contact"><a>| Contact |</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="slider">
+		<figure>
+			<img src="./imgs/1.jpg">
+			<img src="./imgs/2.jpeg">
+			<img src="./imgs/3.jpg">
+			<img src="./imgs/4.jpg">
+			<img src="./imgs/5.jpg">
+		</figure>
+	</div>
+    </div>
+    <div class="about" >
+      <h1 id="about" data-aos="zoom-in-up">About Me</h1>
+      <div class="section" data-aos="zoom-in-up" >
+          Hello! My name is Sushruti Bansod. I go by Sush and my pronouns are
+          She/her. I am a student at the University of Pittsburgh. My
+          aniticipated graduation December 2021. I am majoring in computer
+          science and I am also pursuing a certificate in ASL.
+
+        <p data-aos="zoom-in-up" >I am a aspiring Software Engineer and my goal is to create an 
+          impact in the tech community. I am passionate about inclusivity 
+          within this community. My previous experiences - which vary from coding 
+          algorithms in Java and C to finding cultural differences between signed 
+          language dialects for dataset creation - have helped me improve 
+          effective communication, adaptability, leadership, and attention to detail. 
+        </p>
+      
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+  </body>
 </html>

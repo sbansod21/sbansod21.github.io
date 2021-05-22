@@ -10,13 +10,20 @@ class= . */
 body {
   background-color: #e0dae0;
 }
+* div{
+  border-radius: 8px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 #header {
+  padding: 10px;
   height: 155px;
-  background-color: #78244C;
+  background-color: #59253A;
   text-align: center;
+  height: 180px;
 }
 h1 {
-  margin-top: 30px;
   font-size: 50px;
   color: #eee6ee;
   font-family: Alegreya Sans SC;
@@ -24,8 +31,7 @@ h1 {
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  padding-bottom: 40px;
 }
 nav {
   display: inline;
@@ -73,34 +79,41 @@ li {
   transform: scaleX(1);
 }
 .about {
-  /* height: 300px; */
   background-color: #2D4159;
   color: #eee6ee;
   text-align: center;
   align-content: center;
   font-size: 25px;
   line-height: 1.5;
+  box-shadow: 6px 3px 3px grey;
 }
-.section{
+.about-me{
   width: 500px;
   text-align: center;
   display:inline-block;
   font-size: 20px;
   font-family:Julius Sans One ;
 }
-
-#about{
+.projects{
+  height: 70px;
+  background-color: #78244C;
+  color: #eee6ee;
+  text-align: center;
+  align-content: center;
+  font-size: 25px;
+  box-shadow: 6px 3px 3px grey;
+}
+#label{
   padding-top: 10px;
   font-size: 30px;
 }
-
 #slider {
 	overflow: hidden;
 }
 #slider figure {
 	position: relative;
 	width: 500%;
-	margin: 0;
+	margin: 10px;
 	left: 0;
 	animation: 20s slider infinite;
 }
@@ -137,4 +150,25 @@ li {
 	100% {
 		left: -400%;
 	}
+}
+
+.container{
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 20px;
+  overflow: auto;
+  padding: 0 2rem;
+
+}
+.container img{
+  width: 50%;
+}
+
+.card{
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color: #eaecec;
+  margin-bottom: 2rem;
+  box-shadow: 6px 3px 3px #59253A;
 }

@@ -39,7 +39,7 @@ nav {
 li {
   margin: 70px;
   display: inline;
-  font-family: Julius Sans One;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
 }
 
@@ -80,6 +80,7 @@ li {
 }
 .about {
   background-color: #2D4159;
+  width: 800px;
   color: #eee6ee;
   text-align: center;
   align-content: center;
@@ -92,7 +93,7 @@ li {
   text-align: center;
   display:inline-block;
   font-size: 20px;
-  font-family:Julius Sans One ;
+  font-family: 'Raleway', sans-serif;
 }
 .projects{
   height: 70px;
@@ -153,22 +154,69 @@ li {
 }
 
 .container{
-  max-width: 1100px;
+  width:800px;
   margin: auto;
   margin-top: 20px;
   overflow: auto;
   padding: 0 2rem;
-
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
 }
 .container img{
-  width: 50%;
+  height: 200px;
+  border-radius: 8px;
 }
 
 .card{
   border-radius: 8px;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  background-color: #eaecec;
+  background-color: #d8dada;
   margin-bottom: 2rem;
   box-shadow: 6px 3px 3px #59253A;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+}
+.card>div{
+  padding: 2rem;
+}
+.card:nth-child(even) img{
+  order: 2;
+}
+.top a {
+  position: relative;
+  color: #000000;
+}
+
+.top{
+  font-family: Alegreya Sans SC;
+  font-size: 15px;
+  border-color: #0677A1;
+}
+
+.top a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #59253A;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+}
+.top a {
+  text-decoration: none;
+}
+.top a:hover:before {
+  visibility: visible;
+  background-color: #59253A;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }

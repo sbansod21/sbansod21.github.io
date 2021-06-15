@@ -6,7 +6,10 @@
 
 /* id =#
 class= . */
-
+/* -----------------------------------------------------General--------------------------------------------------------------- */
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: #e0dae0;
 }
@@ -16,6 +19,7 @@ body {
   padding: 0px;
   box-sizing: border-box;
 }
+/* -----------------------------------------------------Header--------------------------------------------------------------- */
 #header {
   padding: 10px;
   height: 155px;
@@ -28,7 +32,7 @@ h1 {
   color: #eee6ee;
   font-family: Alegreya Sans SC;
 }
-
+/* -----------------------------------------------------NavBar--------------------------------------------------------------- */
 ul {
   list-style-type: none;
   padding-bottom: 40px;
@@ -42,72 +46,7 @@ li {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
 }
-
-.link_underline a {
-  position: relative;
-  color: #eee6ee;
-}
-
-.link_underline a:hover {
-  color: #eee6ee;
-}
-
-.link_underline a:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #0677A1;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out 0s;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  -o-transition: all 0.3s ease-in-out 0s;
-  -ms-transition: all 0.3s ease-in-out 0s;
-}
-.link_underline a {
-  text-decoration: none;
-}
-.link_underline a:hover:before {
-  visibility: visible;
-  background-color: #0677A1;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-.about {
-  background-color: #2D4159;
-  width: 800px;
-  color: #eee6ee;
-  text-align: center;
-  align-content: center;
-  font-size: 25px;
-  line-height: 1.5;
-  box-shadow: 6px 3px 3px grey;
-}
-.about-me{
-  width: 500px;
-  text-align: center;
-  display:inline-block;
-  font-size: 20px;
-  font-family: 'Raleway', sans-serif;
-}
-.projects{
-  height: 70px;
-  background-color: #78244C;
-  color: #eee6ee;
-  text-align: center;
-  align-content: center;
-  font-size: 25px;
-  box-shadow: 6px 3px 3px grey;
-}
-#label{
-  padding-top: 10px;
-  font-size: 30px;
-}
+/* -----------------------------------------------------ImageSlider------------------------------------------------------------ */
 #slider {
 	overflow: hidden;
 }
@@ -152,12 +91,52 @@ li {
 		left: -400%;
 	}
 }
-
+/* -----------------------------------------------------About--------------------------------------------------------------- */
+#about {
+  background-color: #2D4159;
+  color: #eee6ee;
+  text-align: center;
+  align-content: center;
+  font-size: 25px;
+  line-height: 1.5;
+  box-shadow: 6px 3px 3px grey;
+  width: 870px;
+  margin: auto;
+}
+.about-me{
+  width: 500px;
+  text-align: center;
+  display:inline-block;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+/* -----------------------------------------------------Projects--------------------------------------------------------------- */
+#projects{
+  background-color: #78244C;
+  color: #eee6ee;
+  text-align: center;
+  align-content: center;
+  font-size: 25px;
+  box-shadow: 6px 3px 3px grey;
+  width: 870px;
+  margin: auto;
+}
+#projects h3{
+  color:#000000;
+}
+#projects p{
+  color:#000000;
+  font-size: 15px;
+}
+#label{
+  padding-top: 10px;
+  font-size: 30px;
+}
 .container{
   width:800px;
   margin: auto;
   margin-top: 20px;
-  overflow: auto;
+  overflow: hidden;
   padding: 0 2rem;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
@@ -166,7 +145,6 @@ li {
   height: 200px;
   border-radius: 8px;
 }
-
 .card{
   border-radius: 8px;
   display: grid;
@@ -176,6 +154,11 @@ li {
   box-shadow: 6px 3px 3px #59253A;
   font-family: 'Raleway', sans-serif;
   line-height: 1.5;
+  justify-content: center;
+  align-items: center;
+}
+.card p{
+  padding: 18px;
 }
 .card>div{
   padding: 2rem;
@@ -183,8 +166,14 @@ li {
 .card:nth-child(even) img{
   order: 2;
 }
+.card h3{
+  font-size: 25px;
+}
+
 .top a {
+  font-size: 18px;
   position: relative;
+  font-family: 'Raleway', sans-serif;
   color: #000000;
 }
 
@@ -219,4 +208,104 @@ li {
   background-color: #59253A;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+/* -----------------------------------------------------Contat and resume--------------------------------------------------------- */
+#end {
+  padding-top: 20px;
+  color: #eee6ee;
+  text-align: center;
+  align-content: center;
+  font-size: 25px;
+  line-height: 1.5;
+}
+.left{
+  width: 49%;
+  float: left;
+  background-color: #2D4159;  
+  padding-bottom: 25px;  
+  margin-bottom: 25px;
+}
+.right{
+  width: 49%;
+  float: right;
+  background-color: #0677A1;
+  padding-bottom: 25px;
+}
+.left img
+{
+  height: 150px;
+}
+.left img:hover{  
+  content: url("./imgs/r.png");
+  height: 150px;
+}
+.right img{
+  height: 30px;
+}
+/* -----------------------------------------------------Link Underline--------------------------------------------------------------- */
+.link_underline a {
+  position: relative;
+  color: #eee6ee;
+}
+
+.link_underline a:hover {
+  color: #eee6ee;
+}
+
+.link_underline a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0677A1;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+}
+.link_underline a {
+  text-decoration: none;
+}
+.link_underline a:hover:before {
+  visibility: visible;
+  background-color: #0677A1;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/* -----------------------------------------------------trace around box thing----------------------------------------------------- */
+/* .svg-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    width: 320px;
+} */
+.shape {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: blue;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+    font-family: sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 8px;
+    color: #000;
+    top: -48px;
+    position: relative;
+}
+.wrapper:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
 }

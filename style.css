@@ -222,14 +222,15 @@ li {
   width: 49%;
   float: left;
   background-color: #2D4159;  
-  padding-bottom: 25px;  
-  margin-bottom: 25px;
+  padding-bottom: 57px;  
+  margin-bottom: 50px;
 }
 .right{
   width: 49%;
   float: right;
   background-color: #0677A1;
-  padding-bottom: 25px;
+  margin-bottom: 50px;;
+ 
 }
 .left img
 {
@@ -238,9 +239,6 @@ li {
 .left img:hover{  
   content: url("./imgs/r.png");
   height: 150px;
-}
-.right img{
-  height: 30px;
 }
 /* -----------------------------------------------------Link Underline--------------------------------------------------------------- */
 .link_underline a {
@@ -278,34 +276,149 @@ li {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-/* -----------------------------------------------------trace around box thing----------------------------------------------------- */
-/* .svg-wrapper {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 auto;
-    width: 320px;
-} */
+/* -----------------------------------------------------email----------------------------------------------------- */
 .shape {
-    stroke-dasharray: 140 540;
-    stroke-dashoffset: -474;
-    stroke-width: 8px;
+    stroke-dasharray: 410 540;
+    stroke-dashoffset: -605;
+    stroke: width 4px;
     fill: transparent;
-    stroke: blue;
-    border-bottom: 5px solid black;
     transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
 .text {
-    font-family: sans-serif;
+    font-family: Alegreya Sans SC;
     font-size: 22px;
     line-height: 32px;
-    letter-spacing: 8px;
+    letter-spacing: 3px;
     color: #000;
-    top: -48px;
-    position: relative;
+    top: -43px;
+    position:relative;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 0.3s;
+    text-decoration: none;
+}
+.text a{
+  text-decoration: none;
+  color: #eee6ee;
+
 }
 .wrapper:hover .shape {
     stroke-width: 2px;
     stroke-dashoffset: 0;
     stroke-dasharray: 760;
+    stroke: black;
+}
+.wrapper:hover .text{
+  opacity: 0.8;
+  /* display: block; */
+}
+.mail{
+  height: 30px;
+  position: absolute;
+  left: 280px;
+  z-index: 10;
+  transition: left 0.8s ease-in-out;
+}
+.wrapper:hover img
+{
+  position: absolute;
+   left: 100px; 
+  content: url("./imgs/m.jpg");
+}
+
+/* -----------------------------------------------------phone number----------------------------------------------------- */
+.shape {
+    stroke-dasharray: 410 540;
+    stroke-dashoffset: -605;
+    stroke: width 4px;
+    fill: transparent;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+    font-family: Alegreya Sans SC;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 3px;
+  color: #eee6ee;
+    top: -43px;
+    position:relative;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 0.3s;
+    text-decoration: none;
+}
+.text a{
+  text-decoration: none;
+  color: #eee6ee;
+
+}
+.wrapper1:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+    stroke: black;
+}
+.wrapper1:hover .text{
+  opacity: 0.8;
+  /* display: block; */
+}
+.phone{
+  height: 35px;
+  position: absolute;
+  left: 280px;
+  z-index: 10;
+  transition: left 0.8s ease-in-out;
+}
+.wrapper1:hover img
+{
+  position: absolute;
+   left: 100px; 
+  content: url("./imgs/fone.png");
+}
+/* -----------------------------------------------------Linked in----------------------------------------------------- */
+.shape {
+    stroke-dasharray: 410 540;
+    stroke-dashoffset: -605;
+    stroke: width 4px;
+    fill: transparent;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+    font-family: Alegreya Sans SC;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 3px;
+      color: #eee6ee;
+
+    top: -43px;
+    position:relative;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 0.3s;
+    text-decoration: none;
+}
+.text a{
+  text-decoration: none;
+  color: #eee6ee;
+
+}
+.wrapper2:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+    stroke: black;
+}
+.wrapper2:hover .text{
+  opacity: 0.8;
+  /* display: block; */
+}
+.linked{
+  height: 35px;
+  position: absolute;
+  left: 280px;
+  z-index: 10;
+  transition: left 0.8s ease-in-out;
+}
+.wrapper2:hover img
+{
+  position: absolute;
+   left: 100px; 
+  content: url("./imgs/in.png");
 }
